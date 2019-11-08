@@ -26,8 +26,7 @@ src: Contains two python files
 	model_one_month_lag.py: (see notebooks ->  one month lag)
 
 		Details
-
-		* Assume your avocado data collection is on a 1 month delay. When predicting the price of an avocado at time 			x, you can only use historical data from up until 1 month prior to x)
+		
 		* Trains a XGBoost model based on all data but features used are based on one month prior at any given point 			of time. 
 		* Needs user input for which 'avocado type' to run the model for and 'region' for which the prediction plot 			to be made
 		* Can be used for future prediction. default is for next month
