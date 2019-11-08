@@ -14,31 +14,29 @@ src: Contains two python files
 	model_interpolation.py: (see notebooks->  Predicting Denver prices (interpolation) )
 
 		Details
-
-		* 	Train a model to predict the avocado price in Denver using avocado prices from all other regions. Explain how you evaluate the performance of the model and 		relative importance of its features.
-		*	Trains a XGBoost model based on all data and predicts prices for Denver region
-		*	Cannot be used for future prediction
-		*	Cross validation, tuning and feature importances are in the notebook
+		* Trains a XGBoost model based on all data and predicts prices for Denver region
+		* Cannot be used for future prediction
+		* Cross validation, tuning and feature importances are in the notebook
 
 		Output
-		*	model file
-		*	Chart showing the actual price vs predicted price for Denver region with evaluation metrics in the title.
-		*	csv file containing the date,type,region,actual price and predicted price
+		* model file
+		* Chart showing the actual price vs predicted price for Denver region with evaluation metrics in the title.
+		* csv file containing the date,type,region,actual price and predicted price
 
 	model_one_month_lag.py: (see notebooks ->  one month lag)
 
-			Details
+		Details
 
-		* 	Assume your avocado data collection is on a 1 month delay. When predicting the price of an avocado at time x, you can only use historical data from up until 1 		month prior to x)
-		*	Trains a XGBoost model based on all data but features used are based on one month prior at any given point of time. 
-		*	Needs user input for which 'avocado type' to run the model for and 'region' for which the prediction plot to be made
-		*	Can be used for future prediction. default is for next month
-		*	Cross validation, tuning and feature importances are in the notebook
+		* Assume your avocado data collection is on a 1 month delay. When predicting the price of an avocado at time 			x, you can only use historical data from up until 1 month prior to x)
+		* Trains a XGBoost model based on all data but features used are based on one month prior at any given point 			of time. 
+		* Needs user input for which 'avocado type' to run the model for and 'region' for which the prediction plot 			to be made
+		* Can be used for future prediction. default is for next month
+		* Cross validation, tuning and feature importances are in the notebook
 
 		Output
-		*	model file
-		*	Chart showing the actual price vs predicted price for chosen region with evaluation metrics in the title.
-		*	csv file containing the date,type,region and predicted price for the next month (April 2018) for all regions
+		* model file
+		* Chart showing the actual price vs predicted price for chosen region with evaluation metrics in the title.
+		* csv file containing the date,type,region and predicted price for the next month (April 2018) for all 			  regions
 
 notebooks: contains 6 interactive notebooks
 	
@@ -46,36 +44,36 @@ notebooks: contains 6 interactive notebooks
 
 		Details
 
-		*	Plots an interactive time series plot for desired region,type and year
-		*	Plots an interactive year-over-year plot for desired region and type
+		* Plots an interactive time series plot for desired region,type and year
+		* Plots an interactive year-over-year plot for desired region and type
 
 	 Exploratory Data Analysis.ipynb
 
 		Details
 
-		*	Exploratory analysis done on the given data and summarizes the finding that is being used in the modeling procedures
+		* Exploratory analysis done on the given data and summarizes the finding that is being used in the modeling 			procedures
 
 	 Single Time Series.ipynb
 
 		Details
 
-		*	Experimentation based on prophet and ARIMA models for per region.
-		*	Summary and findings included in the notebooks
+		* Experimentation based on prophet and ARIMA models for per region.
+		* Summary and findings included in the notebooks
 
 	 Predicting Denver prices (interpolation) and  one month lag.ipynb
 
 		Details
 
-		*	Counterpart notebooks for python scripts
-		*	Contains grid search, cross validation and feature importance analysis 
+		* Counterpart notebooks for python scripts
+		* Contains grid search, cross validation and feature importance analysis 
 
 	 tsfresh features.ipynb
 
 		Details
 
-		*	Experimentations with tsfresh package to generate extensive time series features
-		*	Not currently used in the models
-		*	Outputs a pickle file that can be merged with given data using region,type,date as keys
+		* Experimentations with tsfresh package to generate extensive time series features
+		* Not currently used in the models
+		* Outputs a pickle file that can be merged with given data using region,type,date as keys
 
 data - contains raw and intermediary data files needed for analysis and modeling
 results - contains results files out of modeling
