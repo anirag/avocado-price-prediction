@@ -1,5 +1,5 @@
 pandas_profiling==2.3.0
-numpy==1.17.2
+numpy==1.22.0
 plotnine==0.6.0
 statsmodels==0.10.1
 xgboost==0.82
